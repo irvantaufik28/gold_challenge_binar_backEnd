@@ -1,0 +1,26 @@
+[
+    {
+        "kodeBarang": 1,
+        "namaBarang": "Semen Tiga Roda",
+        "harga": 67500,
+        "stoc": 100,
+        "categori": "semen",
+        "detail": "ini adalah detai info dari barang"
+    },
+    {
+        "kodeBarang": 2,
+        "namaBarang": "Pintu PVC",
+        "harga": 250000,
+        "stoc": 3,
+        "categori": "Pintu",
+        "detail": "ini adalah detai info dari barang"
+    },
+    {
+        "kodeBarang": 3,
+        "namaBarang": "PIPA pvc PVC",
+        "harga": 27500,
+        "stoc": 2,
+        "categori": "Pintu",
+        "detail": "ini adalah detai info dari barang"
+    }
+]
