@@ -17,14 +17,14 @@ const getAllUsers = () => {
 // end getAllUser
 
 
-// mengambil data user berdasarkan emaik
+// mengambil data user berdasarkan email
 
 const getUserByEmail = (email) => {
     load_data()
     let user = users.find(item => { return item.email === email })
     return user
 }
-console.log(getUserByEmail("irvantaufik28@gmail.com"))
+// console.log(getUserByEmail("irvantaufik28@gmail.com"))
 
 
 
@@ -42,7 +42,7 @@ console.log(getUserByEmail("irvantaufik28@gmail.com"))
 
 // end getUserByEmail
 
-function add_user(user) {
+const add_user =(user)=> {
     load_data();
     let user_count = users.length;
     user.id = user_count + 1;
@@ -60,3 +60,20 @@ function add_user(user) {
 // }
 
 // console.log(add_user(data))
+
+
+// Fitur logIn
+const loginUser = (email,password) =>{
+    load_data();
+    
+    let user = users.find(item => { return item.email === email && item.password === password })
+    
+    if(user){
+        return 'Anda berhasil login'
+    } else {return 'password atau email salah'}
+
+}
+console.log(loginUser("irvantaufik2@gmail.com", "123456"))
+// end login
+     
+  
